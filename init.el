@@ -8,17 +8,19 @@
 
 (show-paren-mode 1) ; show matching parens
 
-; (add-to-list 'default-frame-alist '(font . "FONT")) ; Global font
+; (add-to-list 'default-frame-alist '(font . "Source Code Pro")) ; Global font
 
 ; (setq default-directory "C:/Users/glin/")
 
+;; ------------------
 ;; Add Melpa packages
+;; ------------------
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
-;; My packages
 (defvar my-packages '(cider
                       paredit
                       color-theme-sanityinc-tomorrow))
@@ -34,10 +36,14 @@
 
 ;; To set theme: (color-theme-sanityinc-tomorrow-night)
 
+;; --------------
 ;; Package config
+;; --------------
 
 (add-hook 'clojure-mode-hook 'cider-mode)
 (add-hook 'clojure-mode-hook 'paredit-mode)
 
+;; -----------------
 ;; END OF MY CONFIGS
+;; -----------------
 
