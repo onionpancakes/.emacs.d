@@ -16,9 +16,6 @@
 ;; Set default directory to user home
 (setq default-directory "~/")
 
-;; Custom file
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
-
 ;; Backups
 (defconst backup-dir
   (concat user-emacs-directory "backups"))

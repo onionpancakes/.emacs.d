@@ -1,3 +1,5 @@
+;; Packages
+
 (require 'package)
 
 (add-to-list 'package-archives
@@ -8,6 +10,10 @@
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
+
+;; Custom file
+
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
 ;; Load configuration files
 
