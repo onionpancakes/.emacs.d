@@ -1,0 +1,37 @@
+;; No startup message
+(setq inhibit-startup-message t)
+
+;; No scratch message
+(setq initial-scratch-message nil)
+
+;; No ring
+(setq ring-bell-function 'ignore)
+
+;; Show line numbers
+(global-linum-mode t)
+
+;; Show matching parens
+(show-paren-mode 1)
+
+;; Set default directory to user home
+(setq default-directory "~/")
+
+;; Custom file
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+
+;; Backups
+(defconst backup-dir
+  (concat user-emacs-directory "backups"))
+
+(setq backup-directory-alist
+      `(("." . ,backup-dir)))
+
+(setq backup-by-copying t     ; don't clobber symlinks
+      kept-new-versions 10    ; keep 10 latest versions
+      kept-old-versions 0     ; don't bother with old versions
+      delete-old-versions t   ; don't ask about deleting old versions
+      version-control t       ; number backups
+      vc-make-backup-files t) ; backup version controlled files
+
+;; No #autosave# files
+(setq auto-save-default nil)
