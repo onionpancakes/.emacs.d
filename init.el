@@ -44,7 +44,15 @@
 ;; --------------
 
 (defun clojure-mode-indents ()
-  (put-clojure-indent 'fdef 1))
+  ;; clojure.spec
+  (put-clojure-indent 'fdef 1)
+  ;; om.next
+  (put-clojure-indent 'render 1)
+  (put-clojure-indent 'add-root! 1)
+  (put-clojure-indent 'query 1)
+  (put-clojure-indent 'params 1)
+  (put-clojure-indent 'ident 1)
+  (put-clojure-indent 'div 1))
 
 (add-hook 'clojure-mode-hook 'cider-mode)
 (add-hook 'clojure-mode-hook 'paredit-mode)
