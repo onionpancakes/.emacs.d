@@ -17,12 +17,6 @@
 (setq default-directory "~/")
 
 ;; Backups
-(defconst backup-dir
-  (concat user-emacs-directory "backups"))
-
-(setq backup-directory-alist
-      `(("." . ,backup-dir)))
-
 (setq backup-by-copying t     ; don't clobber symlinks
       kept-new-versions 10    ; keep 10 latest versions
       kept-old-versions 0     ; don't bother with old versions

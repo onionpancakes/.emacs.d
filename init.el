@@ -15,6 +15,14 @@
 
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 
+;; Backup directory
+
+(defconst backup-dir
+  (concat user-emacs-directory "backups"))
+
+(setq backup-directory-alist
+      `(("." . ,backup-dir)))
+
 ;; Load configuration files
 
 (defconst config-dir
