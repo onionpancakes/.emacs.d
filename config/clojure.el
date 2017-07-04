@@ -1,3 +1,15 @@
+(use-package paredit
+  :commands paredit-mode
+  :ensure t
+  :init
+  (add-hook 'clojure-mode-hook 'paredit-mode))
+
+(use-package rainbow-delimiters
+  :commands rainbow-delimiters-mode
+  :ensure t
+  :init
+  (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
+
 (use-package clojure-mode
   :ensure t
   :config
@@ -11,15 +23,3 @@
     :config
     (add-hook 'cider-repl-mode-hook 'paredit-mode)
     (add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)))
-
-(use-package paredit
-  :commands paredit-mode
-  :ensure t
-  :init
-  (add-hook 'clojure-mode-hook 'paredit-mode))
-
-(use-package rainbow-delimiters
-  :commands rainbow-delimiters-mode
-  :ensure t
-  :init
-  (add-hook 'clojure-mode-hook 'rainbow-delimiters-mode))
