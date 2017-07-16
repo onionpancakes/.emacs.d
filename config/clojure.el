@@ -16,6 +16,9 @@
   ;; (setq clojure-indent-style :always-indent)
 
   (define-clojure-indent
+    ;; clojure.core
+    (as-> :defn)
+    
     ;; om.next
     (defui [:defn [:defn]])
 
