@@ -18,6 +18,12 @@
   (define-clojure-indent
     ;; clojure.core
     (as-> :defn)
+
+    ;; clojure.spec
+    (fdef :defn)
+
+    ;; test.check
+    (for-all :defn)
     
     ;; om.next
     (defui [:defn [:defn]])
