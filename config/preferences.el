@@ -34,3 +34,7 @@
 
 ;; Font
 (add-to-list 'default-frame-alist '(font . "Source Code Pro"))
+
+;; Disable ctrl-z
+
+(global-unset-key (kbd "C-z"))

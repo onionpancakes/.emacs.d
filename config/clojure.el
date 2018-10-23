@@ -89,7 +89,7 @@
     (li :defn)
     (link :defn)
     (main :defn)
-    (map :defn)
+    ;; (map :defn)
     (mark :defn)
     (menu :defn)
     (menuitem :defn)
