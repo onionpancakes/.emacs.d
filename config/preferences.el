@@ -34,6 +34,7 @@
 
 ;; Font
 (add-to-list 'default-frame-alist '(font . "Source Code Pro"))
+(set-face-attribute 'default nil :height 110)
 
 ;; Disable ctrl-z
 
