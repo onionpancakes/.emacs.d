@@ -39,3 +39,7 @@
 ;; Disable ctrl-z
 
 (global-unset-key (kbd "C-z"))
+
+;; Disable Tool Bar
+
+(tool-bar-mode -1)
