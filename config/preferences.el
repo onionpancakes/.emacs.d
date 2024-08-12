@@ -43,3 +43,11 @@
 ;; Disable Tool Bar
 
 (tool-bar-mode -1)
+
+;; Scale UI
+
+(set-face-attribute 'default nil :height 160)
+
+;; Confirm exit
+
+(setq confirm-kill-emacs 'y-or-n-p)
